@@ -45,7 +45,7 @@
 //                      TABLENAME, NAME, AGE, ADDRESS, @"老六", @"20", @"东城区"];
 //    [self execSql:sql1];
 //    [self execSql:sql2];
-    
+    //
     NSString *sqlQuery = [@"SELECT * FROM " stringByAppendingString:TABLENAME];
     sqlite3_stmt *statement;
     if (sqlite3_prepare_v2(db, [sqlQuery UTF8String], -1, &statement, nil) == SQLITE_OK) {
